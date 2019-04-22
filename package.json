@@ -11,7 +11,7 @@
     "testEnvironment": "node" 
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose --runInBand",
     "test:watch": "npm test -- --watch",
     "start": "node server.js",
     "start:watch": "npm nodemon server.js"
