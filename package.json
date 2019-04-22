@@ -7,9 +7,14 @@
     "lib": "lib",
     "test": "test"
   },
+  "jest": {
+    "testEnvironment": "node" 
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "start": "node server.js",
+    "start:watch": "npm nodemon server.js"
   },
   "repository": {
     "type": "git",
